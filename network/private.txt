@@ -1,0 +1,42 @@
+# development settings
+import os
+
+from network.settings import BASE_DIR
+
+
+DEBUG = True
+
+# Database
+# https://docs.djangoproject.com/en/1.11/ref/settings/#databases
+#
+# Development database with SQLITE3
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+
+# # Development database with MYSQL
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'networkdb',
+#         'USER': 'networkuser',
+#         'PASSWORD': 'neTWorkSecret',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
+
+#
+STATIC_URL = '/static/'
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+# STATIC_ROOT = 'staticfiles'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
+
+# Add media directory and its base url for user uploads
+MEDIA_URL = '/site_media/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'site_media/')
+DEFAULT_FILE_STORAGE = 'django.core.files.storage.FileSystemStorage'

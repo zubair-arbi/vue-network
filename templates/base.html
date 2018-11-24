@@ -1,0 +1,110 @@
+{% load i18n %}
+{% load static %}
+{% load bootstrap3 %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{{ site.name }} | {% block head_title %}{% endblock %}</title>
+
+    <link href="{% static 'favicon.ico' %}" rel="icon" type="image/x-icon"/>
+
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+    <link href="{% static 'css/project_extra.css' %}" rel="stylesheet">
+
+    {% block extra_head %}{% endblock %}
+</head>
+
+<body>
+{% if messages %}
+    {% for message in messages %}
+        <div class="message">
+            <p class="alert alert-{{ message.tags }} site-msg">
+                {{ message }}
+                <a href="#" class="del-msg pull-right"><i class="fa fa-lg fa-times"></i></a>
+            </p>
+        </div>
+    {% endfor %}
+{% endif %}
+
+{% block body %}
+
+    <!-- Navigation -->
+    <header id="header">
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">
+                        <h1>
+                            <img class="logo" src="{% static 'images/network/logo.png' %}" alt="logo">
+                            {{ site.name }}
+                        </h1>
+                    </a>
+
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        {% if user.is_authenticated %}
+                            <li class="active"><a href="/admin/logout/">{% bootstrap_icon "user" %} {% trans "Logout" %}</a></li>
+                        {% else %}
+                            <li class="active"><a href="/admin/">{% bootstrap_icon "user" %} {% trans "Login" %}</a></li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/#header-->
+
+    <div class="content-wrapper">
+        {% block content-wrapper %}{% endblock %}
+    </div>
+
+    <footer id="footer" class="ft">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="copyright-text text-center">
+                        <p>&copy; {{ site.name }} {% now "Y" %}. {% trans "All Rights Reserved" %}.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/#footer-->
+
+{% endblock %}
+
+    <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    {% block extra-page-javascript %}{% endblock %}
+
+    <!-- jQuery -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // ============== Messages Timeout =============
+            setTimeout(function(){
+                $('.message').fadeOut('slow');
+            }, 3000); // <-- time in milliseconds, 60000 =  1 minute
+
+            // delete message
+            $('.del-msg').on("click", function(){
+                $('.del-msg').parent().attr('style', 'display:none;');
+            });
+        });
+    </script>
+</body>
+
+</html>

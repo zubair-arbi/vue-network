@@ -1,0 +1,46 @@
+.content-wrapper {
+    min-height: 400px;
+}
+
+.logo {
+    height: 60px;
+}
+
+.height-125 {
+    height: 125px;
+}
+
+.team-logo {
+    height: 50px;
+}
+
+.row-centered {
+  text-align: center;
+  display: table-row;
+}
+
+.col-centered {
+  display: table-cell;
+  float: none;
+  vertical-align: top;
+}
+
+.background-round-black {
+    border-radius: 25px;
+    background-color: #1C242D;
+}
+
+.hero-thumbnail {
+    border: 2px solid #1C242D;
+}
+
+#footer {
+    margin-top: 60px;
+    background-image: None !important;
+    background-color: grey;
+}
+
+.copyright-text {
+    margin-top: 100px;
+    padding-bottom: 0px;
+}
