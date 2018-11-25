@@ -4,6 +4,8 @@ Helper methods for reading network logs and extraction of required data from the
 
 from logging import getLogger
 
+from network.models import Area, System
+
 
 LOGGER = getLogger(__name__)
 
@@ -27,6 +29,13 @@ class NetworkLogFileParser(object):
     def extract_file_data(self):
         """
         Iterate over each line and extract Areas and Systems connected to current system.
+
+        Extracted data format: {
+            'current_system_name': {
+                'areas': [current_system_areas],
+                'connected_systems': [connected_systems],
+            }
+        }
 
         Example extracted data: {
             'PE-L3Agg-Unay-602-2': {
@@ -76,5 +85,48 @@ class NetworkLogFileParser(object):
                 'connected_systems': connected_systems,
             }
         }
+
+
+def clear_network_models():
+    """
+    Helper method to empty network models for parsing fresh network logs.
+    """
+    System.objects.all().delete()
+    Area.objects.all().delete()
+
+
+def store_network_data(network_data):
+    """
+    Helper method to store provide network data in related models.
+
+    Arguments:
+        network_data (dict): Formatted network logs data.
+
+    Expected network_data format: {
+        'current_system_name': {
+            'areas': [current_system_areas],
+            'connected_systems': [connected_systems],
+        }
+    }
+
+    """
+    if network_data:
+        current_system_name = network_data.keys()[0]
+        area_addresses = network_data[current_system_name].get('areas', [])
+        connected_systems_name = network_data[current_system_name].get('connected_systems', [])
+
+        current_system, __ = System.objects.get_or_create(name=current_system_name)
+        for area_address in area_addresses:
+            area, __ = Area.objects.get_or_create(address=area_address)
+            current_system.areas.add(area)
+
+        for connected_system_name in connected_systems_name:
+            if current_system_name != connected_system_name:
+                # Avoid circular linking with same system (edge case)
+                connected_system, __ = System.objects.get_or_create(name=connected_system_name)
+                current_system.connected_systems.add(connected_system)
+
+        current_system.save()
+
 
 
