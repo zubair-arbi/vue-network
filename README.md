@@ -2,7 +2,7 @@ A test project to parse network logs and provide the data through DRF API.
 
 ### How do I run this project?
 
-The runopia project includes all the basic configurations necessary to get you starting.
+The vue-network project includes all the basic configurations necessary to get you starting.
 
 ### Setup Instructions:
 
@@ -34,7 +34,7 @@ The runopia project includes all the basic configurations necessary to get you s
 ```bash
     make network
 ```
-7. Serve the runopia app on localhost at port 8811
+7. Serve the vue-network app on localhost at port 8811
 
 ```bash
     make serve
