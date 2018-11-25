@@ -1,0 +1,27 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.01.22 00:21:04 =~=~=~=~=~=~=~=~=~=~=~=
+show runn partition router isis core | in net
+ net 49.8004.1921.6811.5156.00
+ net 49.4444.1921.6811.5156.00
+PE-L3Agg-Arar-413-1#show lldp neighbors detail | in System Name|Port id
+Port id: xe-15/0/11
+System Name: PE-L3AggMX2K-Arar-413-1-re0
+Port id: xe-5/0/11
+System Name: PE-L3AggMX2K-Arar-413-1-re0
+Port id: xe-15/0/11
+System Name: PE-L3AggMX2K-Arar-413-2-re0
+Port id: xe-5/0/11
+System Name: PE-L3AggMX2K-Arar-413-2-re0
+PE-L3Agg-Arar-413-1#show lldp neighbor
+Capability codes:
+    (R) Router, (B) Bridge, (T) Telephone, (C) DOCSIS Cable Device
+    (W) WLAN Access Point, (P) Repeater, (S) Station, (O) Other
+
+Device ID           Local Intf     Hold-time  Capability      Port ID
+PE-L3AggMX2K-Arar-41Te4/3          120        B,R             xe-15/0/11
+PE-L3AggMX2K-Arar-41Te3/1          120        B,R             xe-5/0/11
+PE-L3AggMX2K-Arar-41Te3/3          120        B,R             xe-15/0/11
+PE-L3AggMX2K-Arar-41Te4/1          120        B,R             xe-5/0/11
+
+Total entries displayed: 4
+
+PE-L3Agg-Arar-413-1#

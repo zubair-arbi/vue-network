@@ -1,0 +1,34 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.01.21 23:48:47 =~=~=~=~=~=~=~=~=~=~=~=
+show runn partition router isis core | in net
+ net 49.8005.1921.6811.5166.00
+ net 49.4444.1921.6811.5166.00
+PE-L3Agg-Unay-602-1#show lldp neighbors detail | in System Name|Port id
+Port id: et-7/1/8
+System Name: MetroCore-PTX5K-Bur-601-1-re0
+Port id: et-3/1/2
+System Name: MetroCore-PTX5K-Bur-601-1-re0
+Port id: et-0/1/2
+System Name: MetroCore-PTX5K-Bur-601-1-re0
+Port id: et-0/1/5
+System Name: MetroCore-PTX5K-Abar-422-1-re0
+Port id: et-3/1/5
+System Name: MetroCore-PTX5K-Abar-422-1-re0
+Port id: et-3/1/19
+System Name: MetroCore-PTX5K-Abar-422-1-re0
+PE-L3Agg-Unay-602-1#show lldp neighbor
+Capability codes:
+    (R) Router, (B) Bridge, (T) Telephone, (C) DOCSIS Cable Device
+    (W) WLAN Access Point, (P) Repeater, (S) Station, (O) Other
+
+Device ID           Local Intf     Hold-time  Capability      Port ID
+MetroCore-PTX5K-Bur-Te8/22         120        B,R             et-7/1/8
+MetroCore-PTX5K-Bur-Te7/22         120        B,R             et-3/1/2
+MetroCore-PTX5K-Bur-Te4/1          120        B,R             et-0/1/2
+MetroCore-PTX5K-AbarTe8/21         120        B,R             et-0/1/5
+MetroCore-PTX5K-AbarTe3/1          120        B,R             et-3/1/5
+MetroCore-PTX5K-AbarTe7/21         120        B,R             et-3/1/19
+
+Total entries displayed: 6
+
+PE-L3Agg-Unay-602-1#
+PE-L3Agg-Unay-602-1#

@@ -1,0 +1,10 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.01.22 00:20:25 =~=~=~=~=~=~=~=~=~=~=~=
+
+PE-L3Agg-Sak-409-2#
+PE-L3Agg-Sak-409-2#show runn partition router isis core | in net
+ net 49.8004.1921.6811.5174.00
+ net 49.4444.1921.6811.5174.00
+PE-L3Agg-Sak-409-2#show lldp neighbors detail | in System Name|Port id
+PE-L3Agg-Sak-409-2#show lldp neighbor
+% LLDP is not enabled
+PE-L3Agg-Sak-409-2#

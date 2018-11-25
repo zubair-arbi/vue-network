@@ -1,0 +1,25 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.01.21 23:36:49 =~=~=~=~=~=~=~=~=~=~=~=
+show runn partition router isis core | in net
+ net 49.8004.1921.6811.5152.00
+ net 49.4444.1921.6811.5152.00
+PE-L3Agg-Slmn-405-1#show lldp neighbors detail | in System Name|Port id
+Port id: et-7/1/5
+System Name: MetroCore-PTX5K-Jouf-408-1-re0
+Port id: et-7/1/22
+System Name: MetroCore-PTX5K-Slmn-405-1-re0
+Port id: GigabitEthernet0/2/0
+System Name: ZTB012-ATN910-ATN-0
+PE-L3Agg-Slmn-405-1#show lldp neighbor
+Capability codes:
+    (R) Router, (B) Bridge, (T) Telephone, (C) DOCSIS Cable Device
+    (W) WLAN Access Point, (P) Repeater, (S) Station, (O) Other
+
+Device ID           Local Intf     Hold-time  Capability      Port ID
+MetroCore-PTX5K-JoufTe4/1          120        B,R             et-7/1/5
+MetroCore-PTX5K-SlmnTe3/1          120        B,R             et-7/1/22
+ZTB012-ATN910-ATN-0 Gi7/37         120        B,R             GigabitEthernet0/2/0
+
+Total entries displayed: 3
+
+PE-L3Agg-Slmn-405-1#
+PE-L3Agg-Slmn-405-1#

@@ -1,0 +1,41 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.01.22 00:08:16 =~=~=~=~=~=~=~=~=~=~=~=
+show runn partition router isis core | in net
+ net 49.2008.1921.6811.1060.00
+ net 49.4444.1921.6811.1060.00
+ net 49.4461.1921.6811.1060.00
+PE-L3Agg-Mam-610-1#show lldp neighbors detail | in System Name|Port id
+Port id: et-7/1/4
+System Name: MetroCore-PTX5K-Bur-601-1-re0
+Port id: xe-2/0/0
+System Name: PRE-AGGMX104-613-00-000-1-re0_NOPAT
+Port id: et-0/1/10
+System Name: MetroCore-PTX5K-Bur-601-1-re0
+Port id: Te0/0/0/0
+System Name: UPE9-HRMHRDAC-1.stc.com.sa
+Port id: 1106
+System Name - not advertised
+Port id: xe-2/0/0
+System Name: PRE-AGGMX104-FRB01-1-re0
+Port id: et-0/1/15
+System Name: MetroCore-PTX5K-Hail-611-1-re0
+Port id: et-7/1/14
+System Name: MetroCore-PTX5K-Hail-611-1-re0
+PE-L3Agg-Mam-610-1#show lldp neighbor
+Capability codes:
+    (R) Router, (B) Bridge, (T) Telephone, (C) DOCSIS Cable Device
+    (W) WLAN Access Point, (P) Repeater, (S) Station, (O) Other
+
+Device ID           Local Intf     Hold-time  Capability      Port ID
+MetroCore-PTX5K-Bur-Te2/1          120        B,R             et-7/1/4
+PRE-AGGMX104-613-00-Te7/3          120        B,R             xe-2/0/0
+MetroCore-PTX5K-Bur-Te3/22         120        B,R             et-0/1/10
+UPE9-HRMHRDAC-1     Te2/4          120        R               Te0/0/0/0
+0040.43b6.0e8a      Gi9/27         120                        1106
+PRE-AGGMX104-FRB01-1Te3/21         120        B,R             xe-2/0/0
+MetroCore-PTX5K-HailTe1/1          120        B,R             et-0/1/15
+MetroCore-PTX5K-HailTe4/22         120        B,R             et-7/1/14
+
+Total entries displayed: 8
+
+PE-L3Agg-Mam-610-1#
+PE-L3Agg-Mam-610-1#

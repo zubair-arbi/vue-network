@@ -1,0 +1,82 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.01.21 23:52:58 =~=~=~=~=~=~=~=~=~=~=~=
+show runn partition router isis core | in net
+ net 49.4444.1921.6811.5129.00
+PE-L3Agg-Bal-401-3#show lldp neighbors detail | in System Name|Port id
+Port id: et-7/1/6
+System Name: MetroCore-PTX5K-Bur-601-1-re0
+Port id: 1105
+System Name - not advertised
+Port id: 1105
+System Name - not advertised
+Port id: 1106
+System Name - not advertised
+Port id: 1106
+System Name - not advertised
+Port id: et-0/1/18
+System Name: MetroCore-PTX5K-Bur-601-1-re0
+Port id: 1105
+System Name - not advertised
+Port id: 1105
+System Name - not advertised
+Port id: 1105
+System Name - not advertised
+Port id: 1106
+System Name - not advertised
+Port id: 1105
+System Name - not advertised
+Port id: 1105
+System Name - not advertised
+Port id: 1106
+System Name - not advertised
+Port id: 1105
+System Name - not advertised
+Port id: 1105
+System Name - not advertised
+Port id: 1105
+System Name - not advertised
+Port id: et-3/1/13
+System Name: MetroCore-PTX5K-Abar-422-1-re0
+Port id: et-0/1/13
+System Name: MetroCore-PTX5K-Abar-422-1-re0
+Port id: 1105
+System Name - not advertised
+Port id: 1106
+System Name - not advertised
+Port id: 1105
+System Name - not advertised
+Port id: 1105
+System Name - not advertised
+PE-L3Agg-Bal-401-3#show lldp neighbor
+Capability codes:
+    (R) Router, (B) Bridge, (T) Telephone, (C) DOCSIS Cable Device
+    (W) WLAN Access Point, (P) Repeater, (S) Station, (O) Other
+
+Device ID           Local Intf     Hold-time  Capability      Port ID
+MetroCore-PTX5K-Bur-Te1/2          120        B,R             et-7/1/6
+0040.43b5.6f3d      Gi7/23         120                        1105
+00a0.1e05.6e0e      Gi9/13         120                        1105
+00a0.1e05.6e0e      Gi9/12         120                        1106
+0040.43b6.0060      Gi7/31         120                        1106
+MetroCore-PTX5K-Bur-Te2/2          120        B,R             et-0/1/18
+0007.5804.4fa0      Gi8/25         120                        1105
+0040.439c.aa9e      Gi8/13         120                        1105
+0040.43b5.7764      Gi8/29         120                        1105
+0040.43ab.665b      Gi9/4          120                        1106
+0040.43ab.665b      Gi9/7          120                        1105
+0040.43ab.6543      Gi9/1          120                        1105
+0040.43b5.7741      Gi9/14         120                        1106
+0040.43b5.7741      Gi8/11         120                        1105
+0040.43b5.80b3      Gi8/39         120                        1105
+0040.43a4.f10d      Gi9/18         120                        1105
+MetroCore-PTX5K-AbarTe2/1          120        B,R             et-3/1/13
+MetroCore-PTX5K-AbarTe1/1          120        B,R             et-0/1/13
+0007.5806.ccc1      Gi9/9          120                        1105
+0040.43b5.76c4      Gi9/11         120                        1106
+0040.43b6.1aa8      Gi8/27         120                        1105
+0040.43b5.76c4      Gi4/39         120                        1105
+
+Total entries displayed: 22
+
+PE-L3Agg-Bal-401-3#
+PE-L3Agg-Bal-401-3#
+PE-L3Agg-Bal-401-3#

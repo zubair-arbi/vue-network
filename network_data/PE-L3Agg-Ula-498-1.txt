@@ -1,0 +1,62 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.01.21 23:40:52 =~=~=~=~=~=~=~=~=~=~=~=
+show runn partition router isis core | in net
+ net 49.8001.1921.6811.5132.00
+ net 49.4444.1921.6811.5132.00
+ net 49.4401.1921.6811.5132.00
+PE-L3Agg-Ula-498-1#show lldp neighbors detail | in System Name|Port id
+Port id: et-0/1/8
+System Name: MetroCore-PTX5K-Bur-601-1-re0
+Port id: 1106
+System Name - not advertised
+Port id: 1105
+System Name - not advertised
+Port id: 1106
+System Name - not advertised
+Port id: xe-2/0/0
+System Name: PRE-AGGMX104-497-00-000-1-re0_NOPAT
+Port id: 1106
+System Name - not advertised
+Port id: 1105
+System Name - not advertised
+Port id: 1106
+System Name - not advertised
+Port id: et-0/1/11
+System Name: MetroCore-PTX5K-Slmn-405-1-re0
+Port id: 1106
+System Name - not advertised
+Port id: Te0/0/2/2
+System Name: PRE-AGG9K-414-00-000-1.stc.com.sa
+Port id: 1106
+System Name - not advertised
+Port id: 1105
+System Name - not advertised
+Port id: 1105
+System Name - not advertised
+Port id: 1106
+System Name - not advertised
+PE-L3Agg-Ula-498-1#show lldp neighbor
+Capability codes:
+    (R) Router, (B) Bridge, (T) Telephone, (C) DOCSIS Cable Device
+    (W) WLAN Access Point, (P) Repeater, (S) Station, (O) Other
+
+Device ID           Local Intf     Hold-time  Capability      Port ID
+MetroCore-PTX5K-Bur-Te2/1          120        B,R             et-0/1/8
+0007.5806.c679      Gi3/33         120                        1106
+0007.5806.e063      Te2/4          120                        1105
+0007.5806.e063      Te2/4          120                        1106
+PRE-AGGMX104-497-00-Te2/3          120        B,R             xe-2/0/0
+0040.43a4.fac6      Gi3/16         120                        1106
+0040.439c.a9a8      Gi3/6          120                        1105
+0040.439c.a9a8      Gi3/8          120                        1106
+MetroCore-PTX5K-SlmnTe1/2          120        B,R             et-0/1/11
+0040.43b5.80b3      Gi4/8          120                        1106
+PRE-AGG9K-414-00-000Te1/1          120        R               Te0/0/2/2
+0040.43ab.71ad      Gi3/9          120                        1106
+0040.43ab.71ad      Gi4/1          120                        1105
+0040.43b5.8125      Gi3/5          120                        1105
+0040.43b5.8125      Gi3/2          120                        1106
+
+Total entries displayed: 15
+
+PE-L3Agg-Ula-498-1#
+PE-L3Agg-Ula-498-1#

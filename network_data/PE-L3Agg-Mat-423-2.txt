@@ -1,0 +1,13 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.01.22 00:00:18 =~=~=~=~=~=~=~=~=~=~=~=
+$ in "System Name|Port id|Local Interface"$ "System Name|Port id|Local Interface"   show runn router isis core | in net    
+Sun Jan 21 23:49:50.936 KSA
+[K net 49.4444.1921.6811.5186.00
+[KRP/0/RP0/CPU0:PE-Agg22-Mat-423-2#show runn router isis core | in net$ in "System Name|Port id|Local Interface"show lldp neighbor detail | in "System Name|P$
+Sun Jan 21 23:49:53.655 KSA
+[KLocal Interface: TenGigE0/0/0/0
+Port id: et-0/1/3
+System Name: MetroCore-PTX5K-Abar-422-1-re0
+Local Interface: TenGigE0/1/0/0
+Port id: et-0/1/4
+System Name: MetroCore-PTX5K-Bur-601-1-re0
+[KRP/0/RP0/CPU0:PE-Agg22-Mat-423-2#

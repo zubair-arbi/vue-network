@@ -1,0 +1,28 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.01.22 00:12:40 =~=~=~=~=~=~=~=~=~=~=~=
+
+PE-L3Agg-Ayn-614-1#
+PE-L3Agg-Ayn-614-1#show runn partition router isis core | in net
+ net 49.8005.1921.6811.5182.00
+ net 49.4444.1921.6811.5182.00
+ net 49.4403.1921.6811.5182.00
+PE-L3Agg-Ayn-614-1#show lldp neighbors detail | in System Name|Port id
+Port id: et-0/1/7
+System Name: MetroCore-PTX5K-Bur-601-1-re0
+Port id: xe-2/0/0
+System Name: PRE-AGGMX104-698-00-000-1-re0
+Port id: et-0/1/16
+System Name: MetroCore-PTX5K-Hail-611-1-re0
+PE-L3Agg-Ayn-614-1#show lldp neighbor
+Capability codes:
+    (R) Router, (B) Bridge, (T) Telephone, (C) DOCSIS Cable Device
+    (W) WLAN Access Point, (P) Repeater, (S) Station, (O) Other
+
+Device ID           Local Intf     Hold-time  Capability      Port ID
+MetroCore-PTX5K-Bur-Te1/2          120        B,R             et-0/1/7
+PRE-AGGMX104-698-00-Te1/3          120        B,R             xe-2/0/0
+MetroCore-PTX5K-HailTe2/1          120        B,R             et-0/1/16
+
+Total entries displayed: 3
+
+PE-L3Agg-Ayn-614-1#
+PE-L3Agg-Ayn-614-1#

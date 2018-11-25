@@ -1,0 +1,43 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.01.21 23:41:44 =~=~=~=~=~=~=~=~=~=~=~=
+show runn partition router isis core | in net
+ net 49.8002.1921.6811.5140.00
+ net 49.4444.1921.6811.5140.00
+PE-L3Agg-Yan2-431-1#show lldp neighbors detail | in System Name|Port id
+Port id: 1105
+System Name - not advertised
+Port id: et-0/1/17
+System Name: MetroCore-PTX5K-Slmn-405-1-re0
+Port id: 1105
+System Name - not advertised
+Port id: 1106
+System Name - not advertised
+Port id: et-0/1/18
+System Name: MetroCore-PTX5K-Abar-422-1-re0
+Port id: GbE(O)
+System Name: 431-00-000---IPMW58
+Port id: 1106
+System Name - not advertised
+Port id: 1105
+System Name - not advertised
+Port id: 1106
+System Name - not advertised
+PE-L3Agg-Yan2-431-1#show lldp neighbor
+Capability codes:
+    (R) Router, (B) Bridge, (T) Telephone, (C) DOCSIS Cable Device
+    (W) WLAN Access Point, (P) Repeater, (S) Station, (O) Other
+
+Device ID           Local Intf     Hold-time  Capability      Port ID
+0040.43a4.fc86      Gi8/0/4        120                        1105
+MetroCore-PTX5K-SlmnTe4/1          120        B,R             et-0/1/17
+0040.43b5.e723      Gi1/4          120                        1105
+0040.43b5.e723      Gi2/3          120                        1106
+MetroCore-PTX5K-AbarTe3/1          120        B,R             et-0/1/18
+431-00-000---IPMW58 Gi2/7          120        B               GbE(O)
+0040.43b6.039e      Gi1/9          120                        1106
+0040.43b6.039e      Gi8/0/16       120                        1105
+0007.5805.2059      Gi8/0/19       120                        1106
+
+Total entries displayed: 9
+
+PE-L3Agg-Yan2-431-1#
+PE-L3Agg-Yan2-431-1#

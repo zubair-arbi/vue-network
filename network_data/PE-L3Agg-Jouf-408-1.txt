@@ -1,0 +1,36 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.01.22 00:22:02 =~=~=~=~=~=~=~=~=~=~=~=
+show runn partition router isis core | in net
+ net 49.8004.1921.6811.5178.00
+ net 49.4444.1921.6811.5178.00
+PE-L3Agg-Jouf-408-1#show lldp neighbors detail | in System Name|Port id
+Port id: et-0/1/12
+System Name: MetroCore-PTX5K-Arar-413-1-re0
+Port id: ge-4/2/3
+System Name: SPE-MX480-Jouf-408-1_re0
+Port id: ge-4/2/4
+System Name: SPE-MX480-Jouf-408-1_re0
+Port id: GigabitEthernet0/2/1
+System Name: q\
+Port id: GigabitEthernet0/2/2
+System Name: q\
+Port id: xe-5/0/11
+System Name: PE-L3AggMX2K-Jouf-408-1-re0
+Port id: GigabitEthernet0/2/0
+System Name: 408-00-000-ATN910I-02
+PE-L3Agg-Jouf-408-1#show lldp neighbor
+Capability codes:
+    (R) Router, (B) Bridge, (T) Telephone, (C) DOCSIS Cable Device
+    (W) WLAN Access Point, (P) Repeater, (S) Station, (O) Other
+
+Device ID           Local Intf     Hold-time  Capability      Port ID
+MetroCore-PTX5K-ArarTe1/2          120        B,R             et-0/1/12
+SPE-MX480-Jouf-408-1Gi3/20         120        B,R             ge-4/2/3
+SPE-MX480-Jouf-408-1Gi4/20         120        B,R             ge-4/2/4
+q\                  Gi4/1          120        B,R             GigabitEthernet0/2/1
+q\                  Gi4/2          120        B,R             GigabitEthernet0/2/2
+PE-L3AggMX2K-Jouf-40Te7/4          120        B,R             xe-5/0/11
+408-00-000-ATN910I-0Gi3/2          120        B,R             GigabitEthernet0/2/0
+
+Total entries displayed: 7
+
+PE-L3Agg-Jouf-408-1#

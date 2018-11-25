@@ -1,0 +1,54 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.01.22 00:23:03 =~=~=~=~=~=~=~=~=~=~=~=
+show runn partition router isis core | in net
+ net 49.8004.1921.6811.5155.00
+ net 49.4444.1921.6811.5155.00
+PE-L3Agg-Qur-411-1#show lldp neighbors detail | in System Name|Port id
+Port id: GigabitEthernet0/2/4
+System Name: 411-00-000_ATN3-ATN 905-01
+Port id: GigabitEthernet0/2/1
+System Name: 411-00-000_ATN3-ATN 905-01
+Port id: GigabitEthernet0/2/2
+System Name: 411-00-000_ATN3-ATN 905-01
+Port id: GigabitEthernet0/2/2
+System Name: 411-00-000-ATN905-01
+Port id: GigabitEthernet0/2/3
+System Name: 411-00-000-ATN905-01
+Port id: GigabitEthernet0/2/1
+System Name: 411-00-000-ATN905-01
+Port id: GigabitEthernet0/2/0
+System Name: QUA004-ATN910-01
+Port id: et-0/1/2
+System Name: MetroCore-PTX5K-Arar-413-1-re0
+Port id: et-7/1/2
+System Name: MetroCore-PTX5K-Arar-413-1-re0
+Port id: et-0/1/2
+System Name: MetroCore-PTX5K-Jouf-408-1-re0
+Port id: et-7/1/2
+System Name: MetroCore-PTX5K-Jouf-408-1-re0
+Port id: GbE(O)
+System Name: 411-00-000--IPMW166/SIPMW5001
+Port id: GigabitEthernet0/2/1
+System Name: 411-00-000-ATN910I-02
+PE-L3Agg-Qur-411-1#show lldp neighbor
+Capability codes:
+    (R) Router, (B) Bridge, (T) Telephone, (C) DOCSIS Cable Device
+    (W) WLAN Access Point, (P) Repeater, (S) Station, (O) Other
+
+Device ID           Local Intf     Hold-time  Capability      Port ID
+411-00-000_ATN3-ATN Gi9/17         120        B,R             GigabitEthernet0/2/4
+411-00-000_ATN3-ATN Gi9/39         120        B,R             GigabitEthernet0/2/1
+411-00-000_ATN3-ATN Gi1/33         120        B,R             GigabitEthernet0/2/2
+411-00-000-ATN905-01Gi8/4          120        B,R             GigabitEthernet0/2/2
+411-00-000-ATN905-01Gi7/27         120        B,R             GigabitEthernet0/2/3
+411-00-000-ATN905-01Gi8/9          120        B,R             GigabitEthernet0/2/1
+QUA004-ATN910-01    Gi2/23         120        B,R             GigabitEthernet0/2/0
+MetroCore-PTX5K-ArarTe8/22         120        B,R             et-0/1/2
+MetroCore-PTX5K-ArarTe4/1          120        B,R             et-7/1/2
+MetroCore-PTX5K-JoufTe8/21         120        B,R             et-0/1/2
+MetroCore-PTX5K-JoufTe3/1          120        B,R             et-7/1/2
+411-00-000--IPMW166/Gi9/20         120        B               GbE(O)
+411-00-000-ATN910I-0Gi7/26         120        B,R             GigabitEthernet0/2/1
+
+Total entries displayed: 13
+
+PE-L3Agg-Qur-411-1#

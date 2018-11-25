@@ -1,0 +1,64 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.01.22 00:04:28 =~=~=~=~=~=~=~=~=~=~=~=
+ter len 0
+Sun Jan 21 23:53:59.949 KSA
+RP/0/RP1/CPU0:PE-Agg22-Safr-615-3# ter len 0$ in "System Name|Port id|Local Interface"show runn router isis core | in net       
+Sun Jan 21 23:54:03.645 KSA
+ net 49.4403.1921.6811.5143.00
+ net 49.4444.1921.6811.5143.00
+RP/0/RP1/CPU0:PE-Agg22-Safr-615-3#show runn router isis core | in net ter len 0                         $ in "System Name|Port id|Local Interface"show lldp neighbor detail | in "System Name|$
+Sun Jan 21 23:54:06.619 KSA
+Local Interface: TenGigE0/0/0/0
+Port id: et-7/1/4
+System Name: MetroCore-PTX5K-Abar-422-1-re0
+Local Interface: TenGigE0/0/0/6
+Port id: Te0/0/0/0
+System Name: UPE9-JRDHQIAF-1.stc.com.sa
+Local Interface: TenGigE0/0/0/6
+Port id: Te0/0/0/0.2513
+System Name: UPE9-JRDHQIAF-1.stc.com.sa
+Local Interface: TenGigE0/0/0/6
+Port id: Te0/0/0/0.2512
+System Name: UPE9-JRDHQIAF-1.stc.com.sa
+Local Interface: TenGigE0/0/0/6
+Port id: Te0/0/0/0.1700
+System Name: UPE9-JRDHQIAF-1.stc.com.sa
+Local Interface: TenGigE0/0/0/7
+Port id: Te0/0/0/0
+System Name: UPE9-SFRAQICX-1.stc.com.sa
+Local Interface: TenGigE0/0/0/7
+Port id: Te0/0/0/0.2714
+System Name: UPE9-SFRAQICX-1.stc.com.sa
+Local Interface: TenGigE0/0/0/7
+Port id: Te0/0/0/0.2105
+System Name: UPE9-SFRAQICX-1.stc.com.sa
+Local Interface: TenGigE0/0/0/7
+Port id: Te0/0/0/0.2101
+System Name: UPE9-SFRAQICX-1.stc.com.sa
+Local Interface: TenGigE0/0/0/7
+Port id: Te0/0/0/0.1700
+System Name: UPE9-SFRAQICX-1.stc.com.sa
+Local Interface: TenGigE0/0/0/12
+Port id: Te0/0/0/0.1700
+System Name: UPE9-HSATQIAB-1.stc.com.sa
+Local Interface: TenGigE0/0/0/12
+Port id: Te0/0/0/0
+System Name: UPE9-HSATQIAB-1.stc.com.sa
+Local Interface: TenGigE0/0/0/12
+Port id: Te0/0/0/0.2511
+System Name: UPE9-HSATQIAB-1.stc.com.sa
+Local Interface: TenGigE0/0/0/12
+Port id: Te0/0/0/0.2714
+System Name: UPE9-HSATQIAB-1.stc.com.sa
+Local Interface: TenGigE0/0/0/12
+Port id: Te0/0/0/0.1523
+System Name: UPE9-HSATQIAB-1.stc.com.sa
+Local Interface: TenGigE0/0/0/12
+Port id: Te0/0/0/0.2438
+System Name: UPE9-HSATQIAB-1.stc.com.sa
+Local Interface: TenGigE0/1/0/0
+Port id: et-3/1/14
+System Name: MetroCore-PTX5K-Bur-601-1-re0
+Local Interface: TenGigE0/1/0/12
+Port id: xe-2/0/0
+System Name: PRE-AGGMX104-687-00-000-1-re0
+RP/0/RP1/CPU0:PE-Agg22-Safr-615-3#

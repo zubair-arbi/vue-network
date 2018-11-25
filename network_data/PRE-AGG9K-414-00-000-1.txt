@@ -1,0 +1,14 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.01.22 00:14:43 =~=~=~=~=~=~=~=~=~=~=~=
+show runn router isis ACCESS | in net
+Mon Jan 22 00:04:13.293 KSA
+[K net 49.4401.0101.8804.8001.00
+[KRP/0/RSP0/CPU0:PRE-AGG9K-414-00-000-1#show lldp neighbor detail | in "System Na$ in "System Nam                         e|Port id|Local Interface$ocal Interface"                         show lldp neighbor detail | in "System N$
+Mon Jan 22 00:04:13.893 KSA
+[KLocal Interface: TenGigE0/0/2/0
+Port id: Te0/1/0/10
+System Name: PE-L3Agg-Bal-401-4.stc.com.sa
+Local Interface: TenGigE0/0/2/2
+Port id: Te1/1
+System Name: PE-L3Agg-Ula-498-1.stc.com.sa
+[KRP/0/RSP0/CPU0:PRE-AGG9K-414-00-000-1#
+RP/0/RSP0/CPU0:PRE-AGG9K-414-00-000-1#

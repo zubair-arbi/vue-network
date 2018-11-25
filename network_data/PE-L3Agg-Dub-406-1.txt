@@ -1,0 +1,47 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.01.21 23:45:16 =~=~=~=~=~=~=~=~=~=~=~=
+show runn partition router isis core | in net
+ net 49.8004.1921.6811.5177.00
+ net 49.4444.1921.6811.5177.00
+ net 49.4401.1921.6811.5177.00
+PE-L3Agg-Dub-406-1#show lldp neighbors detail | in System Name|Port id
+Port id: xe-2/0/0
+System Name: PRE-AGGMX104-496-00-000-1-re0_NOPAT
+Port id: Te0/0/2/2
+System Name: PRE-AGG9K-488-00-000-1.stc.com.sa
+Port id: Te0/0/2/2
+System Name: PRE-AGG9K-487-00-000-1.stc.com.sa
+Port id: et-0/1/12
+System Name: MetroCore-PTX5K-Slmn-405-1-re0
+Port id: et-3/1/2
+System Name: MetroCore-PTX5K-Abar-422-1-re0
+Port id: GigabitEthernet0/2/2
+System Name: 406-00-000-ATN910-01
+Port id: GigabitEthernet0/2/5
+System Name: 406-00-000-ATN910-01
+Port id: GigabitEthernet0/2/4
+System Name: 406-00-000-ATN910-01
+Port id: GigabitEthernet0/2/6
+System Name: 406-00-000-ATN910-01
+Port id: GbE(O)
+System Name: 406-00-000--ZDBA001
+PE-L3Agg-Dub-406-1#show lldp neighbor
+Capability codes:
+    (R) Router, (B) Bridge, (T) Telephone, (C) DOCSIS Cable Device
+    (W) WLAN Access Point, (P) Repeater, (S) Station, (O) Other
+
+Device ID           Local Intf     Hold-time  Capability      Port ID
+PRE-AGGMX104-496-00-Te7/2          120        B,R             xe-2/0/0
+PRE-AGG9K-488-00-000Te7/3          120        R               Te0/0/2/2
+PRE-AGG9K-487-00-000Te1/4          120        R               Te0/0/2/2
+MetroCore-PTX5K-SlmnTe2/1          120        B,R             et-0/1/12
+MetroCore-PTX5K-AbarTe1/1          120        B,R             et-3/1/2
+406-00-000-ATN910-01Gi3/2          120        B,R             GigabitEthernet0/2/2
+406-00-000-ATN910-01Gi3/1          120        B,R             GigabitEthernet0/2/5
+406-00-000-ATN910-01Gi4/2          120        B,R             GigabitEthernet0/2/4
+406-00-000-ATN910-01Gi4/1          120        B,R             GigabitEthernet0/2/6
+406-00-000--ZDBA001 Gi3/27         120        B               GbE(O)
+
+Total entries displayed: 10
+
+PE-L3Agg-Dub-406-1#
+PE-L3Agg-Dub-406-1#

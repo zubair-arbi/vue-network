@@ -1,0 +1,15 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.01.22 00:08:56 =~=~=~=~=~=~=~=~=~=~=~=
+show runn partition router isis core | in net
+ net 49.2008.1921.6811.1059.00
+ net 49.4444.1921.6811.1059.00
+ net 49.4461.1921.6811.1059.00
+PE-L3Agg-Zil-609-1#show lldp neighbors detail | in System Name|Port id
+                          ^
+% Invalid input detected at '^' marker.
+
+PE-L3Agg-Zil-609-1#show lldp neighbor
+                          ^
+% Invalid input detected at '^' marker.
+
+PE-L3Agg-Zil-609-1#
+PE-L3Agg-Zil-609-1#

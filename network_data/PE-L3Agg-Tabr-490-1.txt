@@ -1,0 +1,33 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.01.21 23:34:11 =~=~=~=~=~=~=~=~=~=~=~=
+show runn partition router isis ocre |          core | in net
+ net 49.8004.1921.6811.5180.00
+ net 49.4444.1921.6811.5180.00
+PE-L3Agg-Tabr-490-1#show lldp neighbors detail | in System Name|Port id
+Port id: et-7/1/22
+System Name: MetroCore-PTX5K-Jouf-408-1-re0
+Port id: et-7/1/22
+System Name: MetroCore-PTX5K-Arar-413-1-re0
+Port id: GigabitEthernet0/2/2
+System Name: 490-00-000-ATN-910-2
+Port id: GigabitEthernet0/2/7
+System Name: 490-00-000_ATN3-ATN905-01
+Port id: GigabitEthernet0/2/3
+System Name: 490-00-000_ATN3-ATN905-01
+Port id: GigabitEthernet0/2/7
+System Name: 490-00-000_ATN3-ATN905-01
+PE-L3Agg-Tabr-490-1#show lldp neighbor
+Capability codes:
+    (R) Router, (B) Bridge, (T) Telephone, (C) DOCSIS Cable Device
+    (W) WLAN Access Point, (P) Repeater, (S) Station, (O) Other
+
+Device ID           Local Intf     Hold-time  Capability      Port ID
+MetroCore-PTX5K-JoufTe2/0/0        120        B,R             et-7/1/22
+MetroCore-PTX5K-ArarTe1/0/0        120        B,R             et-7/1/22
+490-00-000-ATN-910-2Gi4/3          120        B,R             GigabitEthernet0/2/2
+490-00-000_ATN3-ATN9Gi4/1          120        B,R             GigabitEthernet0/2/7
+490-00-000_ATN3-ATN9Gi3/3          120        B,R             GigabitEthernet0/2/3
+490-00-000_ATN3-ATN9Gi3/4          120        B,R             GigabitEthernet0/2/7
+
+Total entries displayed: 6
+
+PE-L3Agg-Tabr-490-1#

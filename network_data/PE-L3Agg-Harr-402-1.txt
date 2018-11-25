@@ -1,0 +1,49 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.01.21 23:55:20 =~=~=~=~=~=~=~=~=~=~=~=
+show runn partition router isis core | in net
+ net 49.8001.1921.6811.5134.00
+ net 49.4444.1921.6811.5134.00
+PE-L3Agg-Harr-402-1#show lldp neighbors detail | in System Name|Port id
+Port id: et-7/1/1
+System Name: MetroCore-PTX5K-Bur-601-1-re0
+Port id: 1105
+System Name - not advertised
+Port id: Te0/0/0/0
+System Name: UPE9-ARYSDNAC-1.stc.com.sa
+Port id: et-3/1/16
+System Name: MetroCore-PTX5K-Bur-601-1-re0
+Port id: Te0/0/0/0.2141
+System Name: UPE9-ARYSDNAC-1.stc.com.sa
+Port id: Te0/0/0/0.1700
+System Name: UPE9-ARYSDNAC-1.stc.com.sa
+Port id: 1105
+System Name - not advertised
+Port id: et-0/1/14
+System Name: MetroCore-PTX5K-Abar-422-1-re0
+Port id: et-3/1/23
+System Name: MetroCore-PTX5K-Abar-422-1-re0
+Port id: 1105
+System Name - not advertised
+Port id: 1105
+System Name - not advertised
+PE-L3Agg-Harr-402-1#show lldp neighbor
+Capability codes:
+    (R) Router, (B) Bridge, (T) Telephone, (C) DOCSIS Cable Device
+    (W) WLAN Access Point, (P) Repeater, (S) Station, (O) Other
+
+Device ID           Local Intf     Hold-time  Capability      Port ID
+MetroCore-PTX5K-Bur-Te3/4          120        B,R             et-7/1/1
+0040.43b6.2e73      Gi2/25         120                        1105
+UPE9-ARYSDNAC-1     Te4/2          120        R               Te0/0/0/0
+MetroCore-PTX5K-Bur-Te4/1          120        B,R             et-3/1/16
+UPE9-ARYSDNAC-1     Te4/2          120        R               Te0/0/0/0.2141
+UPE9-ARYSDNAC-1     Te4/2          120        R               Te0/0/0/0.1700
+0040.43ab.64a1      Gi8/0/16       120                        1105
+MetroCore-PTX5K-AbarTe3/1          120        B,R             et-0/1/14
+MetroCore-PTX5K-AbarTe4/4          120        B,R             et-3/1/23
+0040.43ab.64c3      Gi2/16         120                        1105
+0040.43b5.76c6      Gi8/0/12       120                        1105
+
+Total entries displayed: 11
+
+PE-L3Agg-Harr-402-1#
+PE-L3Agg-Harr-402-1#

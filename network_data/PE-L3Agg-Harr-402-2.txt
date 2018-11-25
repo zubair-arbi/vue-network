@@ -1,0 +1,27 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.01.21 23:55:52 =~=~=~=~=~=~=~=~=~=~=~=
+
+PE-L3Agg-Harr-402-2#
+PE-L3Agg-Harr-402-2#show runn partition router isis core | in net
+ net 49.8001.1921.6811.5131.00
+ net 49.4444.1921.6811.5131.00
+PE-L3Agg-Harr-402-2#show lldp neighbors detail | in System Name|Port id
+Port id: et-0/1/16
+System Name: MetroCore-PTX5K-Bur-601-1-re0
+Port id: et-3/1/14
+System Name: MetroCore-PTX5K-Abar-422-1-re0
+Port id: 1106
+System Name - not advertised
+PE-L3Agg-Harr-402-2#show lldp neighbor
+Capability codes:
+    (R) Router, (B) Bridge, (T) Telephone, (C) DOCSIS Cable Device
+    (W) WLAN Access Point, (P) Repeater, (S) Station, (O) Other
+
+Device ID           Local Intf     Hold-time  Capability      Port ID
+MetroCore-PTX5K-Bur-Te2/1          120        B,R             et-0/1/16
+MetroCore-PTX5K-AbarTe1/2          120        B,R             et-3/1/14
+0040.43b5.76c6      Gi7/2          120                        1106
+
+Total entries displayed: 3
+
+PE-L3Agg-Harr-402-2#
+PE-L3Agg-Harr-402-2#

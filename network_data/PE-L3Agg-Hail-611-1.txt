@@ -1,0 +1,31 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.01.22 00:09:34 =~=~=~=~=~=~=~=~=~=~=~=
+show runn partition router isis core | in net
+ net 49.8005.1921.6811.5163.00
+ net 49.4444.1921.6811.5163.00
+PE-L3Agg-Hail-611-1#show lldp neighbors detail | in System Name|Port id
+Port id: et-7/1/17
+System Name: MetroCore-PTX5K-Bur-601-1-re0
+Port id: et-3/1/17
+System Name: MetroCore-PTX5K-Bur-601-1-re0
+Port id: et-7/1/1
+System Name: MetroCore-PTX5K-Hail-611-1-re0
+Port id: et-0/1/2
+System Name: MetroCore-PTX5K-Hail-611-1-re0
+Port id: Gi2/39
+System Name: PE-L3Agg-Hail-611-1.stc.com.sa
+PE-L3Agg-Hail-611-1#show lldp neighbor
+Capability codes:
+    (R) Router, (B) Bridge, (T) Telephone, (C) DOCSIS Cable Device
+    (W) WLAN Access Point, (P) Repeater, (S) Station, (O) Other
+
+Device ID           Local Intf     Hold-time  Capability      Port ID
+MetroCore-PTX5K-Bur-Te3/4          120        B,R             et-7/1/17
+MetroCore-PTX5K-Bur-Te4/1          120        B,R             et-3/1/17
+MetroCore-PTX5K-HailTe4/4          120        B,R             et-7/1/1
+MetroCore-PTX5K-HailTe3/1          120        B,R             et-0/1/2
+PE-L3Agg-Hail-611-1 Gi2/39         120        B,R             Gi2/39
+
+Total entries displayed: 5
+
+PE-L3Agg-Hail-611-1#
+PE-L3Agg-Hail-611-1#
