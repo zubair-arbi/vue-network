@@ -57,6 +57,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         {% if user.is_authenticated %}
                             <li class="active"><a href="/admin/network/">{% bootstrap_icon "blackboard" %} {% trans "Network Admin" %}</a></li>
+                            <li class="active"><a href="/api/v1/">{% bootstrap_icon "record" %} {% trans "DRF API's" %}</a></li>
                             <li class="active"><a href="/admin/logout/">{% bootstrap_icon "user" %} {% trans "Logout" %}</a></li>
                         {% else %}
                             <li class="active"><a href="/admin/">{% bootstrap_icon "user" %} {% trans "Login" %}</a></li>

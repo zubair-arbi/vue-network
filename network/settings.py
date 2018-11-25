@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'bootstrap3',
+    'rest_framework',
+
+    'network',
 ]
 
 MIDDLEWARE = [
@@ -203,7 +206,7 @@ LOGGING = {
     },
     'loggers': {
         'django': {
-            'handlers': ['file'],
+            'handlers': ['console', 'file'],
             'propagate': True,
             'level': 'ERROR',
         },
