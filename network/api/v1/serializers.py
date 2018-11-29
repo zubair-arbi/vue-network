@@ -3,7 +3,7 @@ from rest_framework import serializers
 from network.models import Area, System
 
 
-class AreaSerializer(serializers.ModelSerializer):
+class AreaListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Area
         fields = ('id', 'address')
@@ -15,8 +15,33 @@ class SystemListSerializer(serializers.ModelSerializer):
         fields = ('id', 'name')
 
 
+class AreaSerializer(serializers.ModelSerializer):
+    connected_systems = SystemListSerializer(source='system_set', many=True, read_only=False)
+
+    class Meta:
+        model = Area
+        fields = ('id', 'address', 'connected_systems')
+
+    def update(self, instance, validated_data):
+        connected_systems_data = validated_data.pop('system_set')
+
+        # now get extra optional parameters to unlink connected systems
+        unlinked_connected_systems_data = self.initial_data.get('unlinked_connected_systems', [])
+
+        for connected_system in connected_systems_data:
+            connected_system_object, __ = System.objects.get_or_create(name=connected_system['name'])
+            connected_system_object.areas.add(instance)
+
+        for connected_system in unlinked_connected_systems_data:
+            connected_system_object = System.objects.filter(name=connected_system['name']).first()
+            if connected_system_object:
+                connected_system_object.areas.remove(instance)
+
+        return instance
+
+
 class SystemSerializer(serializers.ModelSerializer):
-    areas = AreaSerializer(many=True, read_only=False)
+    areas = AreaListSerializer(many=True, read_only=False)
     connected_systems = SystemListSerializer(many=True, read_only=False)
 
     class Meta:
