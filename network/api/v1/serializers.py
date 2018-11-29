@@ -15,8 +15,17 @@ class SystemListSerializer(serializers.ModelSerializer):
         fields = ('id', 'name')
 
 
+class ConnectedSystemsSerializer(serializers.ModelSerializer):
+    areas = AreaListSerializer(many=True, read_only=False)
+    connected_systems = SystemListSerializer(many=True, read_only=False)
+
+    class Meta:
+        model = System
+        fields = ('id', 'name', 'areas', 'connected_systems')
+
+
 class AreaSerializer(serializers.ModelSerializer):
-    connected_systems = SystemListSerializer(source='system_set', many=True, read_only=False)
+    connected_systems = ConnectedSystemsSerializer(source='system_set', many=True, read_only=False)
 
     class Meta:
         model = Area
@@ -28,6 +37,10 @@ class AreaSerializer(serializers.ModelSerializer):
         # now get extra optional parameters to unlink connected systems
         unlinked_connected_systems_data = self.initial_data.get('unlinked_connected_systems', [])
 
+        # now try to extra optional parameters to link/unlink nested systems
+        nested_systems_data = self.initial_data.get('nested_systems', [])
+        unlinked_nested_systems_data = self.initial_data.get('unlinked_nested_systems', [])
+
         for connected_system in connected_systems_data:
             connected_system_object, __ = System.objects.get_or_create(name=connected_system['name'])
             connected_system_object.areas.add(instance)
@@ -36,6 +49,16 @@ class AreaSerializer(serializers.ModelSerializer):
             connected_system_object = System.objects.filter(name=connected_system['name']).first()
             if connected_system_object:
                 connected_system_object.areas.remove(instance)
+
+        for nested_system in nested_systems_data:
+            parent_system_object, __ = System.objects.get_or_create(name=nested_system['parent_system'])
+            child_system_object, __ = System.objects.get_or_create(name=nested_system['name'])
+            parent_system_object.connected_systems.add(child_system_object)
+
+        for nested_system in unlinked_nested_systems_data:
+            parent_system_object, __ = System.objects.get_or_create(name=nested_system['parent_system'])
+            child_system_object, __ = System.objects.get_or_create(name=nested_system['name'])
+            parent_system_object.connected_systems.remove(child_system_object)
 
         return instance
 
