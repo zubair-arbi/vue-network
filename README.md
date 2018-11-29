@@ -28,13 +28,18 @@ The vue-network project includes all the basic configurations necessary to get y
 ```bash
     make migrate
 ```
-5. Place your PuTTY log files in the network_data folder (There are existing files as well in this folder)
-6. Parse network log files in the "network_data" directory and store extracted data in network models:
+5. Create basic api_user for the client "vue-network-client" to communicate with this server:
+
+```bash
+    make api_user
+```
+6. Place your PuTTY log files in the network_data folder (There are existing files as well in this folder)
+7. Parse network log files in the "network_data" directory and store extracted data in network models:
 
 ```bash
     make network
 ```
-7. Serve the vue-network app on localhost at port 8811
+8. Serve the vue-network app on localhost at port 8811
 
 ```bash
     make serve

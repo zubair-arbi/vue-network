@@ -32,5 +32,8 @@ serve:
 migrate:
 	python manage.py migrate --noinput
 
+api_user:
+	python manage.py create_django_admin
+
 network:
 	python manage.py process_network_logs
